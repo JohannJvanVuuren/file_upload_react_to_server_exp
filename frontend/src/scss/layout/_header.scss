@@ -1,0 +1,27 @@
+@import '../abstract/variables';
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  height: 10rem;
+
+  &__title {
+    grid-column: 2 /3;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__nav {
+    grid-column: 3 / 4;
+    align-self: flex-end;
+    justify-self: right;
+    margin-right: $margin-edge;
+    margin-bottom: .5rem;
+  }
+
+  &__link {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}

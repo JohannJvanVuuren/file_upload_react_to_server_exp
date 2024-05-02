@@ -1,0 +1,22 @@
+@import '../abstract/variables';
+
+// Global reset
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Setting 1rem = 10px for ease of use
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, rgba($color-blue-light, .5), rgba($color-blue-medium, .5), rgba($color-blue-dark, .5));
+  height: 100vh;
+  font-family: 'Lato', Arial, sans-serif;
+  color: $color-blue-medium;
+}
